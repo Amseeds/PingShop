@@ -1,0 +1,339 @@
+.main {
+    float: right;
+    width: 980px;
+    height: 455px;
+    margin-top: 10px;
+}
+
+.focus {
+    float: left;
+    position: relative;
+    width: 721px;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.focus ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.focus .prev,
+.next {
+
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    top: 50%;
+    margin-top: -15px;
+    background: rgba(0, 0, 0, .5);
+
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 15px 15px 0;
+    text-align: center;
+}
+
+.prev::after {
+    font-family: 'icomoon';
+    content: '\e91f';
+    font-size: 20px;
+}
+
+.next {
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.next::after {
+    font-family: 'icomoon';
+    content: '\e920';
+    font-size: 20px;
+}
+
+.promo_nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 7px;
+}
+
+.promo_nav li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.promo_nav .selected {
+    background-color: #ff5000;
+}
+
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 100%;
+}
+
+.news {
+    height: 165px;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+}
+
+.news .news_hd {
+    height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    line-height: 33px;
+    padding: 0 15px;
+}
+
+.news .news_hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news .news_hd .more {
+    float: right;
+}
+
+.news .news_hd .more::after {
+    font-family: "icomoon";
+    content: "\e920";
+}
+
+.news_bd {
+    padding: 5px 15px 0;
+}
+
+.news .news_bd ul li {
+    height: 24px;
+    line-height: 24px;
+    /* 以下三行样式使得超出显示区域的文本以省略号的形式显示 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* text-align: center; */
+}
+
+.lifeservice {
+    height: 214px;
+    overflow: hidden;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 62.5px;
+    height: 71px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+/* .lifeservice ul li:nth-child(4n-2) {
+    border-left: 0;
+    border-right: 0;
+}
+
+.lifeservice ul li:nth-child(4n) {
+    border-left: 0;
+}
+
+.lifeservice ul li:nth-last-child(1) {
+    border-bottom: 0;
+}
+
+.lifeservice ul li:nth-last-child(2) {
+    border-bottom: 0;
+}
+
+.lifeservice ul li:nth-last-child(3) {
+    border-bottom: 0;
+}
+
+.lifeservice ul li:nth-last-child(4) {
+    border-bottom: 0;
+} */
+
+.lifeservice ul li {
+    position: relative;
+    text-align: center;
+}
+
+.lifeservice ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -17px -15px;
+}
+
+.lifeservice ul li img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bargain {
+    margin-top: 1px;
+}
+
+.recom {
+    height: 163px;
+    margin-top: 12px;
+    background-color: #ebebeb;
+}
+
+.recom_hd {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 206px;
+    background-color: #5c5251;
+}
+
+.recom_hd img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* CSS3新属性 */
+    /* 此处用于绝对定位居中时位移自身宽度一半的操作 */
+    /* transform: translate(x, y); x和y都不能省略*/
+    transform: translate(-50%, -50%);
+}
+
+.recom_bd {
+    float: right;
+    background-color: #ebebeb;
+}
+
+.recom_bd ul li {
+    float: left;
+    position: relative;
+}
+
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+/* 选择前三个li */
+.recom_bd ul li:nth-child(-n+3):after {
+    content: '';
+    /* after双伪元素默认为行内元素 */
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: normal;
+}
+
+.box_hd .tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.box_hd .tab_list ul li {
+    float: left;
+}
+
+.box_hd .tab_list ul li a {
+    padding: 0 15px;
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.box_bd img {
+    transition: all .3s;
+}
+
+.box_bd img:hover {
+    transform: translateX(5px);
+}
+
+.tab_content_item>div {
+    float: left;
+    height: 361px;
+}
+
+.tab_content_item a {
+    /* 一般情况下，当a包含有宽度的盒子的时候，
+    需要转换为块级元素 */
+    display: block;
+    overflow: hidden;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-right: 10px;
+}
+
+.col_329 {
+    width: 329px;
+    background-color: #aed6d8;
+
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.border_bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}

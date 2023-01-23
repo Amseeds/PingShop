@@ -1,0 +1,63 @@
+/* 列表页样式文件 */
+
+.seckill {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 14px;
+}
+
+.seckill_list {
+    float: left;
+}
+
+.seckill_con {
+    float: left;
+}
+
+.seckill_list ul li {
+    float: left;
+}
+
+.seckill_list ul li a {
+    display: block;
+    line-height: 45px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.seckill_con ul li {
+    float: left;
+}
+
+.seckill_con ul li a {
+    display: block;
+    line-height: 45px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.seckill_con ul li:last-child a::after {
+    font-family: 'icomoon';
+    content: '\e91e';
+}
+
+.sk_bd ul li {
+    overflow: hidden;
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin-right: 13px;
+    border: 1px solid transparent;
+}
+
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}

@@ -1,0 +1,100 @@
+/* 把所有标签的内外边距清零 */
+* {
+    margin: 0;
+    padding: 0;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+}
+
+/* 有些网站提倡的初始化内外边距清零的做法 */
+/* html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0;
+} */
+
+/* em和i斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal;
+}
+
+/* 去掉li的圆点 */
+li {
+    list-style: none;
+}
+
+img {
+    /* 照顾低版本浏览器 存在的如果图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底部有空白缝隙的问题 */
+    vertical-align: middle;
+}
+
+/* 使得按钮标签在鼠标hover时变小手 */
+button {
+    cursor: pointer;
+}
+
+/* 改变a的默认样式  */
+a {
+    color: #666;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a:hover {
+    color: #e33333;
+    ;
+}
+
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53";
+    /* 去除默认的灰色边框 */
+    border: 0;
+    /* 去除默认的 选中时的边框 */
+    outline: none;
+}
+
+body {
+    /*  CSS3 抗锯齿 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53";
+    color: #666;
+}
+
+.hide,
+.none {
+    display: none;
+}
+
+.clearfix::after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: "";
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1
+}

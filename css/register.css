@@ -1,0 +1,159 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px solid #c81423;
+}
+
+.logo img {
+    margin-top: 18px;
+}
+
+.registerarea {
+    height: 522px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+
+}
+
+.registerarea h3 {
+    height: 42px;
+    line-height: 42px;
+    padding: 0 10px;
+    background-color: #ececec;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.registerarea .login {
+    float: right;
+    font-size: 14px
+}
+
+.login a {
+    color: #c81423;
+}
+
+.regform {
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.regform form ul li {
+    margin-bottom: 20px;
+}
+
+.regform form ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+
+.regform form ul li input[type='text'],
+input[type='password'] {
+    width: 242px;
+    height: 37px;
+    margin: 0 15px;
+    border: 1px solid #ccc;
+}
+
+.error {
+    color: #c81423;
+}
+
+.success {
+    color: green;
+}
+
+.error_icon,
+.success_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-top: -3px;
+    margin-right: 2px;
+}
+
+.error_icon {
+    background: url(../images/error.png) no-repeat;
+}
+
+.success_icon {
+    background: url(../images/success.png) no-repeat;
+}
+
+.safe {
+    margin: 0 1px;
+    padding-left: 180px;
+}
+
+.safe em {
+    margin: 0 1px;
+    padding: 0 12px;
+    color: #fff;
+}
+
+.safe .ruo {
+    background-color: #de1111;
+}
+
+.safe .zhong {
+    background-color: #40b83f;
+}
+
+.safe .qiang {
+    background-color: #f79100;
+}
+
+.agree {
+    padding-left: 125px;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+.agree input {
+    vertical-align: middle;
+}
+
+.submit_btn {
+    width: 200px;
+    height: 34px;
+    margin-left: 120px;
+    background-color: #c81423;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.mod_copyright {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.mod_copyright .links {
+    margin-bottom: 10px;
+}
+
+.mod_copyright .links ul {
+    /* width: 843px;
+    margin: 0 auto; */
+    display: inline-block;
+}
+
+.mod_copyright .links ul li {
+    float: left;
+}
+
+.mod_copyright .links a {
+    padding: 0 7px;
+}
+
+.mod_copyright .copyright {
+    line-height: 20px;
+}
