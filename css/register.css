@@ -39,7 +39,7 @@ header {
 }
 
 .regform {
-    width: 600px;
+    width: 725px;
     margin: 50px auto 0;
 }
 
@@ -58,6 +58,7 @@ input[type='password'] {
     width: 242px;
     height: 37px;
     margin: 0 15px;
+    padding: 0 10px;
     border: 1px solid #ccc;
 }
 
